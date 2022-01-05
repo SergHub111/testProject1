@@ -1,0 +1,463 @@
+@import url('burger.scss');
+
+:root{
+    --color_blue: #1eacc7;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+
+    a{
+        text-decoration: none;
+    }
+}
+
+
+
+header{
+    background: url("../img/bg_header.png") center center/cover no-repeat;
+
+    .nav_container_fluid{
+    
+        background-color: #212121;
+        height: 50px;
+        .container{
+            max-width: 1140px;  
+            .navigation{     
+        
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px 0;
+                    padding: 0 15px;
+            
+                    .v_line{
+                        border-right: 2px dotted #000;
+                        @media (max-width:992px) {
+                            display: none;
+                        }
+                    }
+            
+                    .burger_btn {
+                        color:white;
+                        display: none;
+                        @media (max-width:992px) {
+                            display: inline-block;
+                        }
+                    }
+            
+                    .nav_list_item{
+                        padding: 2px 0;
+                        font-family: Roboto;
+                        font-size: 15px;
+                        font-weight: 300;
+                        a{
+                            color: #fff;
+                            
+                        }
+                        @media (max-width:992px) {
+                            display: none;
+                        }
+                        
+                       
+                    }
+            
+                    @media (max-width:992px) {
+                        display: inline-block;
+                    }
+                    
+                }
+                
+            }
+        }
+        @media (max-width:992px) {
+           
+        }
+    
+    }
+    .sub_header_container_fluid {
+        background-color:rgba(0, 0, 0, 0.8);
+        .container{
+            max-width: 1140px;
+            padding: 20px 0 17px 0; 
+    
+            .test{
+                padding: 0;
+            }
+            
+            .info_uber{
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+                .logo_block{
+                    display: flex;
+                }
+                .uber_text{
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    color: #fff;
+                    margin-left: 10px;
+                }
+                .under_text_uber{
+                    font-family: Roboto;
+                    font-size: 13px;
+                    font-weight: 100;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.5);
+                }
+                @media (max-width:768px) {
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+    
+            .call_number{
+                .call_text{
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 300;
+                    text-align: left;
+                    color: #fff;  
+    
+                    @media (max-width:768px) {
+                        text-align: center;
+                    }
+                }
+    
+                .call_tel{
+                    font-family: Roboto;
+                    font-size: 22px;
+                    text-align: left;
+                    color: #fff;
+                }
+    
+                @media (max-width:768px) {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                }
+                
+            }
+    
+            .btn_block{
+    
+                .call_btn{
+                    text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+                    font-family: Roboto;
+                    font-size: 14px;
+                    text-align: center;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding: 15px 20px;
+                    box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
+                    outline: none;
+                    border: none;
+                    border-radius: 2px;
+                    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+        
+                    @media (max-width:768px) {
+                        margin: 10px 0 30px 0;
+                    }
+                }
+    
+                @media (max-width:768px) {
+                    display: flex;
+                    justify-content: center;
+                }
+                
+            }
+            
+        }
+    }
+
+    .uber_partners{
+        .uber_partners_head{
+            font-size: 60px;
+            font-weight: 900;
+            line-height: 0.5;
+            text-align: center;
+            margin-top: 67px;
+            color: #fff;
+
+            @media (max-width: 1200px) {
+                line-height: normal;
+            }
+            @media (max-width: 576px) {
+                font-size: 40px;
+            }
+
+
+            span{
+                font-size: 36px;
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: center;
+                color: #fff;
+                display: inline-block;
+                margin-top: 20px;
+                @media (max-width: 576px) {
+                    font-size: 28px;
+                }
+    
+            }
+        }
+        .uber_partners_text{
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: center;
+            color: #fff;
+            margin-top: 25px;
+        }
+        .btn_block{
+            margin: 120px auto 140px auto;
+            display: flex;
+            justify-content: center;
+
+            .uber_partners_btn{
+                text-shadow: 0.7px 0.7px 0 rgba(0, 0, 0, 0.21);
+                font-family: Roboto;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+                padding: 15px 20px;
+                box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
+                outline: none;
+                border: none;
+                border-radius: 2px;
+                background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+    }
+        }
+        
+    }
+
+}
+
+
+.offer {
+    max-width: 1140px;
+    padding-bottom: 65px;
+
+
+    .offer_head {
+        display: flex;
+        justify-content: center;
+        margin:70px 0 auto 0;
+        
+        h5{
+        
+            
+            font-size: 11px;
+            font-weight: 100;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: black;
+            padding: 8px 11px 6px 12px;
+          
+        }
+
+        
+    }
+   
+    .offer_subhead{
+        margin-top: 45px;
+        font-size: 38px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #222;
+    }
+
+    .offer_pluses{
+        .offer_pluses_item{
+            margin: 40px 0 0 0;
+            align-self:flex-start;
+
+            
+
+            .offer_pluses_item_icon{
+                width: 115px;
+                height: 115px;
+                background-color: #1eacc7;
+                border-radius:50%;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                @media (max-width: 1200px) {
+                    margin: 0 auto 15px auto;
+                }
+    
+                i{
+                    font-size: 50px;
+                    align-self:  center;
+                    color: white;
+                }
+    
+                    
+            }
+    
+            .offer_pluses_item_text{
+                margin-left: 20px;
+                font-size: 15px;
+                font-weight: 300;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.4;
+                letter-spacing: normal;
+                color: #202020;
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+    
+                span{
+                    font-size: 17px;
+                    font-weight: normal;
+                    color: #1eacc7;
+                }
+            }
+        }
+        
+    }
+}
+
+.mobile_app{
+    max-width: 1140px;
+    min-height: 600px;
+    margin-top: 50px;
+
+    .mobile_app_title{
+        display: flex;
+        justify-content: center;
+        
+        h5{
+            font-size: 11px;
+            font-weight: 100;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: black;
+            padding: 8px 11px 6px 12px;
+        }
+    }
+
+    .mobile_app_head{
+        margin-top: 40px;
+        font-size: 38px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #222;
+    }
+
+    .mobile_app_subhead{
+        margin-top: 10px;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.24;
+        letter-spacing: normal;
+        text-align: center;
+        color: #222;
+    }
+
+    .mobile_app_features{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 80px;
+
+        .features_item{
+            margin: 20px;
+            background-color:violet;
+            width: 320px;
+            height: 280px;
+            text-transform: uppercase;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 90px 0 40px 0;
+
+            &:nth-child(1){
+                background: url("../img/mob_app__1.png") center center/cover no-repeat;
+            }
+            &:nth-child(2){
+                background: url("../img/mob_app__2.png") center center/cover no-repeat;
+            }
+            &:nth-child(3){
+                background: url("../img/mob_app__3.png") center center/cover no-repeat;
+            }
+            &:nth-child(4){
+                background: url("../img/mob_app__4.png") center center/cover no-repeat;
+            }
+            &:nth-child(5){
+                background: url("../img/mob_app__5.png") center center/cover no-repeat;
+            }
+            &:nth-child(6){
+                background: url("../img/mob_app__6.png") center center/cover no-repeat;
+            }
+
+
+            h5{
+                font-size: 24px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+                text-align: center;
+                color: #fff;
+            }
+
+            .link_plus{
+                width: 25px;
+                height: 25px;
+                background-color:black;
+                border-radius:50%;
+                display: flex;
+                justify-content: center;
+                align-self: center;
+
+                a{
+                    align-self: center;
+                    font-size: 28px;
+                    font-weight: 100;
+                    color: #1eacc7;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+    
+
